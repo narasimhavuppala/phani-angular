@@ -1,7 +1,7 @@
 <h1>Welcome to Angular Training</h1>
 
 <h2>sum of {{a}} + {{b}} = {{a +b}}</h2>
-<div class="container-fluid">
+<div class="container-fluid" *ngIf="isShow">
     <input type="text" id="name" class="form-control" [(ngModel)]="a">
     <button (click)="updateDOM($event)">Click Me</button>
 </div>
